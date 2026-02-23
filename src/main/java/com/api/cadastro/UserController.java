@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins="https://cad-users-backend-production.up.railway.app/usuarios")
+@CrossOrigin(origins="https://cad-users-frontend.vercel.app/")
 @RestController
 @RequestMapping("/usuarios")
 public class UserController {
