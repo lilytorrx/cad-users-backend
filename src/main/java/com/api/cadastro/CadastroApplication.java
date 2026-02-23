@@ -13,21 +13,4 @@ public class CadastroApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CadastroApplication.class, args);
 	}
-
-	@Configuration
-	public static class CorsConfiguration {
-
-		@Bean
-		public WebMvcConfigurer corsConfigurer() {
-			return new WebMvcConfigurer() {
-				@Override
-				public void addCorsMappings(CorsRegistry registry) {
-					registry.addMapping("/**")
-							.allowedOrigins("https://cad-users-frontend.vercel.app")
-							.allowedMethods("GET", "POST", "PUT", "DELETE")
-							.allowedHeaders("*");
-				}
-			};
-		}
-	}
 }
